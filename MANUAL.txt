@@ -1,0 +1,62 @@
+====================================
+AVALIADOR DE EXPRESSÕES MATEMÁTICAS
+====================================
+
+Descrição:
+====================================
+Este projeto implementa um analisador de expressões matemáticas na linguagem C, capaz de processar operações como:
+
+    - Soma, Subtração, Multiplicação, Divisão, Módulo e Potência
+    - Parênteses para controle de precedência
+    - Análise sintática e semântica 
+    - Detecção de erros como divisão por zero, parênteses desbalanceados, caracteres inválidos, etc.
+
+Obs: Este trabalho foi desenvolvido conforme o enunciado da cadeira de Programação Imperativa.
+
+Requisitos:
+====================================
+- Compilador C (como GCC)
+- Sistema operacional compatível com linha de comando (Windows CMD, etc.)
+
+Arquivos:
+====================================
+- main.c              → função principal
+- analisador.c/h      → funções de tokenização, validação, conversão e avaliação
+- Fila.c/h            → estrutura e operações de fila
+- Pilha.c/h           → pilha de tokens
+- Pilha_int.c/h       → pilha de inteiros para avaliação
+- Token.h             → estrutura dos tokens
+- in.txt              → arquivo de entrada com expressões (uma por linha)
+- out.txt             → arquivo de saída com os resultados (ou mensagens de erro)
+- MANUAL.txt          → este guia de uso
+====================================
+
+Compilação:
+====================================
+Abra o CMD e navegue até a pasta com os arquivos. Depois, execute o comando:
+
+    gcc main.c Fila.c Pilha.c Pilha_int.c analisador.c -o avaliador.exe
+
+Isso irá gerar o executável "avaliador.exe" na mesma pasta.
+
+Execução:
+====================================
+Para rodar o programa no CMD use:
+
+    avaliador.exe in.txt out.txt
+
+O programa vai ler o arquivo "in.txt" vai analisar cada expressão matemática e gravará as repostas certas no arquivo "out.txt", mas se ele não existir então será criado automaticamente.
+
+
+Observações:
+====================================
+- Apenas números de um dígito são permitidos (0–9)
+- O projeto utiliza exclusivamente as estruturas de dados fornecidas no repositório do git hub do monitor "Eliezer Mucanji": 
+https://github.com/eliezermucaji/materiais_de_apoio_programacao_imperativa.git
+
+
+Estudantes: GRUPO Nº08  
+Cadeira: Programação Imperativa  
+Universidade: FC UAN/Ciências da Computação   
+
+

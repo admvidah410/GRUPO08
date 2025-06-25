@@ -1,0 +1,10 @@
+6
+0
+Erro: Caracteres invalidos
+10
+12
+4
+Erro: Parenteses desbalanceados ou expressao malformada
+2
+4
+Erro: Divisao por zero
